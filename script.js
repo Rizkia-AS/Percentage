@@ -25,7 +25,14 @@ let percent = '';
 operator.addEventListener('click',function(event) {
 
 	if(event.target.className == 'btResult' ) {
-		percent = (child.value / base.value) * 100 ;
+		const c = parseInt(child.value);
+		const b = parseInt(base.value);
+		
+		if(c > b) {
+			alert(`Child has more value than base !`);
+			return ;
+		}
+		percent = Math.round((c / b) * 100) ;
 		result.innerHTML = ''+ percent +''
 	};
 
