@@ -80,7 +80,7 @@
 		outline: none;
 	}
 
-	body p:nth-child(1) {
+	body p:nth-child(2) {
 		color: red;
 	}
 /*akhir general*/
